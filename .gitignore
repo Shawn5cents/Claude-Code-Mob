@@ -1,0 +1,80 @@
+# Claude Code Mobile - Git Ignore File
+
+# Security and sensitive files
+api-keys
+*.key
+*.pem
+*password*
+*secret*
+.env
+.env.*
+
+# Personal data and logs
+*.log
+logs/
+*.pid
+.pid
+
+# Cache and temporary files
+cache/
+tmp/
+*.tmp
+*.temp
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+env/
+crag_env/
+
+# Database and data files
+*.db
+*.sqlite
+*.json.bak
+crag_data/
+conversations.json
+
+# Backup files
+backup*/
+*.backup
+*.bak
+*~
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts
+dist/
+build/
+*.so
+*.o
+*.a
+
+# Mobile specific
+.gradle/
+local.properties
+
+# Termux specific
+.shortcuts/*.tmp
+.termux/
+
+# Personal configuration
+config.json
+settings.json
+preferences.json
+
+# Test outputs
+test-results/
+coverage/
+.nyc_output/
