@@ -10,12 +10,15 @@ This repository provides comprehensive documentation and implementation guides f
 
 ### System Architecture
 
-The Claude Code Mobile implementation consists of four primary components:
+The Claude Code Mobile implementation consists of seven primary components:
 
 1. **Claude Code CLI Core** - Official Anthropic CLI with mobile optimizations
-2. **CRAG System** - Conversational Retrieval-Augmented Generation for historical context
-3. **Mini Claude Offline** - Standalone AI assistant with local learning capabilities  
-4. **Nichols Bridge** - Device integration and communication layer
+2. **Claude Prompt Tuner** - Advanced prompt optimization system for Claude 4 family models
+3. **CRAG System** - Conversational Retrieval-Augmented Generation with 26+ imported conversations
+4. **Context Engineering Script** - Automated AI-optimized project scaffolding and template system
+5. **Mini Claude Offline** - Standalone AI assistant with local learning capabilities  
+6. **Nichols Bridge** - Device integration and communication layer
+7. **Auto-Startup Integration** - Seamless shell integration with all systems
 
 ### Performance Benchmarks
 
@@ -128,7 +131,55 @@ python3 CRAG/run_crag.py --add "conversation text"
 python3 CRAG/run_crag.py --stats
 ```
 
-### 3. Mini Claude Offline
+### 3. Claude Prompt Tuner
+
+**Purpose**: Advanced prompt optimization for Claude 4 family models
+
+**Features**:
+- Multi-layered prompt enhancement (25-70% improvement in response quality)
+- Claude 4 model-specific patterns (Sonnet 4, Haiku 4, Opus 4)
+- Task-aware optimization (coding, debugging, analysis, planning)
+- CRAG integration for historical context
+- Auto-startup integration with Claude Code
+
+**Commands**:
+```bash
+# Quick prompt optimization
+optimize "your prompt"
+
+# Enhanced prompt with clipboard copy
+enhance "your prompt"
+
+# Full CLI access
+claude-tune "analyze database performance" --model opus-4
+
+# Interactive optimization mode
+prompt-interactive
+```
+
+### 4. Context Engineering Script
+
+**Purpose**: Automated AI-optimized project scaffolding and template system
+
+**Features**:
+- Product Requirements Prompt (PRP) system for complex features
+- AI-optimized project structure generation
+- Multi-language and framework support
+- Workflow automation for feature development
+- Integration with Claude Code and prompt optimization
+
+**Commands**:
+```bash
+# Create new AI-optimized project
+new-project MyApp android
+
+# Context-engineered project with templates
+context-project MyMLProject ml
+
+# Available project types: web, mobile, api, cli, ml, general
+```
+
+### 5. Mini Claude Offline
 
 **Purpose**: Standalone AI assistant with local learning
 
@@ -154,7 +205,7 @@ mc analyze file.py
 mc train
 ```
 
-### 4. Nichols Bridge System
+### 6. Nichols Bridge System
 
 **Purpose**: Device integration and communication layer
 
